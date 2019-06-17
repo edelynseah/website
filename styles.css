@@ -76,7 +76,7 @@ aside.slide {
     letter-spacing: 4px;
     font-size: 26px;
     font-weight: 700;
-    border-right: 1px solid #eee;
+    border-right: 3px solid #eee;
     box-sizing: border-box;
 }
 
@@ -91,10 +91,10 @@ aside.slide {
 
 @keyframes blink {
     from, to { 
-        border-color: transparent 
+        border-color: grey; 
     }
     50% { 
-        border-color: #FFB5A6; 
+        border-color: grey; 
     }
 }
 
@@ -297,5 +297,18 @@ aside.slide {
     width:800px;
     border-radius:20px;
     margin: auto;
-    margin-bottom: 400px;
+    margin-bottom: 150px;
+}
+
+.contact {
+    margin-bottom: 200px;
+}
+
+.email {
+    font-size:20px;
+    border: 1px solid #FF775F;
+    color: black;
+    padding:10px;
+    background-color: #eee;
+    border-radius: 20px;
 }
