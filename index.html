@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href= "resume-2/styles.css" rel= "styles.css">
+        <title>Edelyn Seah </title>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon_io/site.webmanifest">
+        <link rel="stylesheet" href="styles.css">
+        <a href="https://icons8.com/icon/15817/long-arrow-up"></a>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#more').click(function(){
+             $('.menu').toggleClass('open'); 
+          });
+  $(document).on('scroll', function() {
+      if($(this).scrollTop()>=$('header').position().top){
+          $('aside').addClass('slide');
+      }
+      else {
+           $('aside').removeClass('slide');
+      }
+  })
+     });
+    </script> 
+    <script src="script.js"></script>
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200&display=swap');
+        * {text-align:center}
+</style>
+</head>
+
+<body>
+<aside>
+</aside>
+    <header id="home">
+        <div class="edelyn">
+            <h2>Edelyn's Online Portfolio!</h2>
+        </div>
+    </header>  
+    <div class="arrow">
+        <a href="#home">
+                <img src="https://img.icons8.com/windows/32/000000/long-arrow-up.png">
+        </a>
+    </div>
+<div class="flex-1">
+    <div class="flex-2">
+        <div class="icon">
+            <img src="images/cat.jpg" width="300" height="300">
+        </div>
+         <div class="about"> 
+                <div class="typewriter">
+                        <div class="typewriter-text">Hi, I'm Edelyn! I'm 18.</div>
+                    </div>
+            <p>As an ambitious teenager, I am often enthusiastic about challenges that makes me unique and sets myself apart from others. 
+                I am aiming to pursue a tech related education and future career.
+            </p>
+            <div class="links">
+                <a href="#education" alt="education"> Education </a>
+                <span> • </span>
+                <a href="#academic" alt="achievements"> Achievements </a>
+                <span> • </span>
+                <a href="#qualities" alt="qualities"> Qualities </a>
+            </div>
+            <p id="education"></p>
+        </div>
+     </div>
+    <div class="education">
+        <div>
+        <h2>Education</h2>
+        <div>
+                SK Bukit Kemuning (2) [2008 -2012] <br>
+                SMK Kota Kemuning [2013 -2018] <br>
+                Sunway College [2019 - present] <br>
+        </div>
+    </div>
+    </div>
+    <p id="academic"></p>
+        <div class="academic">
+        <h2>Academic Achievements</h2>
+        <p>
+            UPSR: 5A's <br>
+            PT3: 7A's 2B's <br>
+            SPM: 10A's <br>
+        </p>
+    </div>
+    <div class="other">           
+        <h2>Other Achievements</h2>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2> Intern - Pulsifi Sdn.Bhd.</h2>
+                <ul class="list">
+                    <li>Only current intern in the company and youngest in the team </li>
+                    <li>Spoke at JuniorDev in Google Malaysia about mentee/ intern experience</li>
+                    <li>Managed user support & led meeting calls</li>
+                    <li>Participated in revamping UI design</li>
+                    <li>Wrote code for automation testing</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2> Core Organising Team Member - NG-MY 2019</h2>
+                <ul class="list">  
+                    <li>Youngest core team member to lead an Angular (Javascript Framework) conference for 400+ developer attendees and 30 international speakers </li>
+                    <li>Handled scholarships for 200 applicants</li>
+                    <li>Creating sponsored content for sponsors</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>Core Organising Team Member - Rails Girls KL</h2>
+                <ul class="list">
+                        <li>Core team member organising a Javascript workshop for 50+ teenagers</li>
+                        <li>Managing external vendors such as venue providers</li>
+                    </ul>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>Volunteer - Women Who Code KL</h2>
+                <ul class="list"> 
+                        <li>Volunteered for Automation Testing Workshop</li>
+                    </ul>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>Treasurer - Prefectorial Board 2018</h2>
+                <ul class="list">  
+                        <li>Chosen as part of the top 7 board members for the school Prefects, leading 122 Prefects</li>
+                    </ul>
+              </div>
+            </div>
+</div>
+</div>
+</div>
+
+<div id="qualities" class="about-me">
+    <h1>Some facts about me:</h1>
+<h1>I am
+    <span
+    class="txt-rotate"
+    data-period="100"
+    data-rotate='[ "great at working in teams. ", "organised. (Excel is cool.) ", "punctual. ", "independant. (Google is my best friend.) ", "quite awesome actually. ",
+     "a dog lover. ", "also a cat lover. ", "hardworking by default. " ]'></span>
+    </h1>
+</div>
+
+<div class="contact"></div>
+
+
+</body>
+<footer class="footer">
+    <p>edelyn seah 2019</p>
+</footer>
+</html>
