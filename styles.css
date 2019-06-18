@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     font-size: 17px;
     background: #FFFFFF;
+    color: #474747;
     scroll-behavior: smooth;
 }
 
