@@ -1,168 +1,235 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <base href="./">
-        <link href= "resume-2/styles.css" rel= "styles.css">
-        <title>Edelyn Seah </title>
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon_io/site.webmanifest">
-        <link rel="stylesheet" href="styles.css">
-        <a href="https://icons8.com/icon/15817/long-arrow-up"></a>
-        
+
+<head>
+    <base href="./">
+    <link href="resume-2/styles.css" rel="styles.css">
+    <title>Edelyn Seah </title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <a href="https://icons8.com/icon/15817/long-arrow-up"></a>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-          $('#more').click(function(){
-             $('.menu').toggleClass('open'); 
-          });
-  $(document).on('scroll', function() {
-      if($(this).scrollTop()>=$('header').position().top){
-          $('aside').addClass('slide');
-      }
-      else {
-           $('aside').removeClass('slide');
-      }
-  })
-     });
-    </script> 
+        $(document).ready(function () {
+            $('#more').click(function () {
+                $('.menu').toggleClass('open');
+            });
+            $(document).on('scroll', function () {
+                if ($(this).scrollTop() >= $('header').position().top) {
+                    $('aside').addClass('slide');
+                }
+                else {
+                    $('aside').removeClass('slide');
+                }
+            })
+        });
+    </script>
     <script src="script.js"></script>
-<style>
+    <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:200&display=swap');
-        * {text-align:center}
-</style>
+
+        * {
+            text-align: center
+        }
+    </style>
 </head>
 
 <body>
-<aside>
-</aside>
+    <aside>
+    </aside>
     <header id="home">
         <div class="edelyn">
             <h1>Edelyn Seah</h1>
         </div>
-    </header>  
+    </header>
     <div class="arrow">
         <a href="#home">
-                <img src="https://img.icons8.com/windows/32/000000/long-arrow-up.png">
+            <img src="https://img.icons8.com/windows/32/000000/long-arrow-up.png">
         </a>
     </div>
-<div class="flex-1">
-    <div class="flex-2">
-        <div class="icon">
-            <img src="images/cat.jpg" width="300" height="300">
-        </div>
-         <div class="about"> 
+    <div class="flex-1">
+        <div class="flex-2">
+            <div class="icon">
+                <img src="images/edelyn_img.jpg" width="300" height="300">
+            </div>
+            <div class="about">
                 <div class="typewriter">
-                        <div class="typewriter-text">Hi, I'm Edelyn! I'm 18.</div>
-                    </div>
-            <p>As an ambitious teenager, I am often enthusiastic about challenges that makes me unique and sets myself apart from others. 
-                I am aiming to pursue a tech related education and future career.
+                    <div class="typewriter-text">Hi, I'm Edelyn!</div>
+                </div>
+                <p> Edelyn is currently a year 3 Computer Science student at Monash University. Edelyn is always
+                    motivated and very willing to learn and develop new skills. Played a key role in organising
+                    successful non-profit events for the community. Aspires to improve quality of life for
+                    underrepresented communities with compassion assisted by the power of technology.
+                </p>
+                <div class="links">
+                    <a href="#education" alt="education"> Education </a>
+                    <span> • </span>
+                    <a href="#work" alt="achievements"> Achievements </a>
+                    <span> • </span>
+                    <a href="#qualities" alt="qualities"> Qualities </a>
+                </div>
+                <p id="education"></p>
+            </div>
+        </div>
+        <div class="education">
+            <div>
+                <h2>Education</h2>
+                <div>
+                    SK Bukit Kemuning (2) [2008 -2012] <br>
+                    UPSR: 5A's <br>
+                    SMK Kota Kemuning [2013 -2018] <br>
+                    PT3: 7A's 2B's <br>
+                    SPM: 10A's <br>
+                    Sunway College [2019 - 2020] <br>
+                    Monash University [2020 - present] <br>
+                </div>
+                <div>
+                    <h2>Certifications</h2>
+
+                </div>
+            </div>
+        </div>
+        <p id="work"></p>
+        <div class="work">
+            <h2>Work Experience</h2>
+            <p>
+            <h2> Intern - Pulsifi Sdn.Bhd.</h2>
+            <p> March 2019 - August 2019</p>
+            <ul class="list">
+                <li>Revamped UI design of Pulsifi' platform using HTML, CSS and Javascript.</li>
+                <li>Performed bug fixes with development team - increased efficiency of product delivery of products by
+                    30% in 30 days using Jira Atlassian & SQL.</li>
+                <li>Participated and led bi-weekly retrospective meetings and daily standups that followed Scrum
+                    Methodology.
+                    Performed mix of level 0, 1 and 2 production support for 20+ users daily.</li>
+                <li>Developed script on an AI Platform (Cypress.io) to perform Automated Testing.</li>
+                <li>Presented at JuniorDev Meetup in Google Malaysia Headquarters, Kuala Lumpur about internship
+                    experience in Pulsifi.</li>
+
+            </ul>
             </p>
-            <div class="links">
-                <a href="#education" alt="education"> Education </a>
-                <span> • </span>
-                <a href="#academic" alt="achievements"> Achievements </a>
-                <span> • </span>
-                <a href="#qualities" alt="qualities"> Qualities </a>
-            </div>
-            <p id="education"></p>
         </div>
-     </div>
-    <div class="education">
-        <div>
-        <h2>Education</h2>
-        <div>
-                SK Bukit Kemuning (2) [2008 -2012] <br>
-                SMK Kota Kemuning [2013 -2018] <br>
-                Sunway College [2019 - present] <br>
+        <div class="other">
+            <h2>Other Achievements</h2>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>Outreach Coordinator - Girls in Tech KL</h2>
+                        <p>January 2022 - Present</p>
+                        <ul class="list">
+                            <li>Main communicator between 100+ local university partners and IT companies under Girls in
+                                Tech for Microsoft Led, female-centered Hackathon: Code Without Barriers in Asia Pacific
+                                region. </li>
+                            <li>Responsible for design and revision of curriculum and contents based on the fundamentals
+                                of Data Science for a physical Workshop tailored for 25 children aged 9-12.</li>
+                            <li>Lead for Student Ambassadors Programme</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>Co-lead Tech Evangelist - MEET community</h2>
+                        <p>August 2022 - Present</p>
+                        <ul class="list">
+                            <li>Endorse Microsoft Eminent ExperTise Community (MEET) where Microsoft Certification
+                                achievers share their knowledge and experiences with other like-minded members.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>Operations Associate - Google Developers Student Club</h2>
+                        <p>October 2022 - Present</p>
+                        <ul class="list">
+                            <li>Part of Monash Malaysia's GDSC to spearhead the learning and growth of developers
+                                throughout the student body by inspiring the widespread use of technology to create
+                                solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>Partnerships Manager - Robogals Monash Malaysia</h2>
+                        <p>October 2022 - present</p>
+                        <ul class="list">
+                            <li>Established and maintained relationships with partners, handled sponsorships.</li>
+                            <li>Initiated collaboration with communities and similar organisations with Robogals Monash
+                                Malaysia.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>Organising Committee - Sunway Tech Club</h2>
+                        <p>June 2019 - July 2020</p>
+                        <ul class="list">
+                            <li>Notable events: UI/UX workshop, PowerBI workshop, Excel Workshop, AWS Cloud Immersion
+                                Workshop, Google Cloud Study Jam, Python Workshop, Github Workshop, Weblaunch 2020.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>Core Team Member - NG-MY 2019</h2>
+                        <p>January 2019 - June 2019</p>
+                        <ul class="list">
+                            <li>Youngest core team member to organise NG-MY, an Angular conference for 400+ developer
+                                attendees and 30 international speakers.</li>
+                            <li>Handled sponsorship deals with 20+ reputable companies and collected RM135,000 in
+                                sponsorships and allocated scholarships to 50 international attendees.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "awards">
+            <h2>Honors and Awards</h2>
+            <p>
+                <b>Google Career Certificates Scholar (Online Coursera course)</b>
+                <br>
+                Organised by Google, Coursera and Girls In Tech KL Dec 2021
+                Awarded scholarship sponsored by Google to receive certification in Coursera’s UX design course.
+                <br>
+                <b>Ideathon ‘21 (Worldwide IT hackathon)</b>
+                <br>
+                Organised by PICT IEEE Student Branch, India Dec 2021
+                Awarded 1st runner up; presented a pitch to demonstrate a mockup that operates on artificial neural networks
+                used in image recognition aimed to tackle the 25% contamination rate issue in recyclables.
+                <br>
+                <b>GHC Student Scholarship (Developer conference)</b>
+                <br>
+                Organised by Grace Hopper Celebration 2020 Sep 29 – Oct 2 2020
+                Awarded with full scholarship to attend GHC 2020 and a mentee in AnitaB.org Mentorship program
+                <br>
+            </p>
         </div>
     </div>
-    </div>
-    <p id="academic"></p>
-        <div class="academic">
-        <h2>Academic Achievements</h2>
-        <p>
-            UPSR: 5A's <br>
-            PT3: 7A's 2B's <br>
-            SPM: 10A's <br>
-        </p>
-    </div>
-    <div class="other">           
-        <h2>Other Achievements</h2>
-        <div class="timeline">
-            <div class="container left">
-              <div class="content">
-                <h2> Intern - Pulsifi Sdn.Bhd.</h2>
-                <ul class="list">
-                    <li>Only current intern in the company and youngest in the team </li>
-                    <li>Spoke at JuniorDev in Google Malaysia about mentee/ intern experience</li>
-                    <li>Managed user support & led meeting calls</li>
-                    <li>Participated in revamping UI design</li>
-                    <li>Wrote code for automation testing</li>
-                </ul>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2> Core Organising Team Member - NG-MY 2019</h2>
-                <ul class="list">  
-                    <li>Youngest core team member to lead an Angular (Javascript Framework) conference for 400+ developer attendees and 30 international speakers </li>
-                    <li>Handled scholarships for 200 applicants</li>
-                    <li>Creating sponsored content for sponsors</li>
-                </ul>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <h2>Core Organising Team Member - Rails Girls KL</h2>
-                <ul class="list">
-                        <li>Core team member organising a Javascript workshop for 50+ teenagers</li>
-                        <li>Managing external vendors such as venue providers</li>
-                    </ul>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>Volunteer - Women Who Code KL</h2>
-                <ul class="list"> 
-                        <li>Volunteered for Automation Testing Workshop</li>
-                    </ul>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <h2>Treasurer - Prefectorial Board 2018</h2>
-                <ul class="list">  
-                        <li>Chosen as part of the top 7 board members for the school Prefects, leading 122 Prefects</li>
-                    </ul>
-              </div>
-            </div>
-</div>
-</div>
-</div>
 
-<div id="qualities" class="about-me">
-    <h1>Some facts about me:</h1>
-<h2>I am
-    <span
-    class="txt-rotate"
-    data-period="100"
-    data-rotate='[ "great at working in teams. ", "always looking forward to learn new things.", "organised. (Excel is cool.) ", "punctual. ", "independent. (Google is my best friend.) ",
+    
+
+    <div id="qualities" class="about-me">
+        <h1>Some facts about me:</h1>
+        <h2>I am
+            <span class="txt-rotate" data-period="100" data-rotate='[ "great at working in teams. ", "always looking forward to learn new things.", "organised. (Excel is cool.) ", "punctual. ", "independent. (Google is my best friend.) ",
      "a dog lover. ", "also a cat lover. ", "hardworking by default. ", "dedicated in everything I do." ]'></span>
-    </h2>
-</div>
+        </h2>
+    </div>
 
-<div class="contact">
+    <div class="contact">
         <h1>Would like to have a chat?</h1>
         <a href="mailto:edelyn.seah@gmail.com" class="email">Contact me!</a>
-        <h6>I wont bite.  : -)</h6>
-</div>
+        <h6>I wont bite. : -)</h6>
+    </div>
 
 
 </body>
 <footer class="footer">
     <p>edelyn seah 2019</p>
 </footer>
+
 </html>

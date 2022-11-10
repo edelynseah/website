@@ -151,7 +151,6 @@ aside.slide {
     background-color:#FFB5A6;
     padding: 30px;
     margin-bottom: 250px;
-    height:1100px;
     border-radius:20px;
 }
 
@@ -172,16 +171,14 @@ aside.slide {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    height: 850px;
   }
   
   /* Container around content */
   .container {
-    padding: 0px 40px;
+    padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-    height: 160px;
     font-size: 15px;
   }
   
@@ -287,9 +284,18 @@ aside.slide {
     text-align: left;
 }
 
-.academic > h2 {
-    color: #FF775F;
-}
+  .work {
+    width: 70%;
+  }
+
+  .work > h2 {
+      color: #FF775F;
+
+  }
+
+  .awards {
+    width: 70%;
+  }
 
 .about-me {
     background-color:white;
